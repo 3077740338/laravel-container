@@ -1,0 +1,21 @@
+{
+    "name": "learn/laravel-container",
+    "description": "private package",
+    "keywords": ["laravel", "framework", "Learn"],
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Jiang Tao",
+            "email": "3077740338@qq.com"
+        }
+    ],
+    "autoload": {
+        "psr-4": {
+            "Learn\\": "src/"
+        }
+    },
+    "config": {
+        "sort-packages": true
+    },
+    "minimum-stability": "dev"
+}
