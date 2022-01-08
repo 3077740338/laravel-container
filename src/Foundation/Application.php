@@ -82,7 +82,7 @@ class Application
      */
     public static function runArtisan($basePath = null)
     {
-        return optional(static::createApplication($basePath)->make(ConsoleKernel::class), static function ($kernel) {
+        return with(static::createApplication($basePath)->make(ConsoleKernel::class), static function ($kernel) {
             $kernel->terminate($input = new ArgvInput(), $status = $kernel->handle($input, new ConsoleOutput()));
             return $status;
         });
